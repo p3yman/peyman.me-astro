@@ -1,15 +1,10 @@
 ---
+import Layout from '../layouts/Default.astro';
+const title = "Peyman Eskandari | Front-end Developer";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title={title}>
+	<section class="pt-36 pb-64">
+		<h1 class="text-3xl font-serif mb-10 leading-relaxed font-light text-secondary">Hi, I’m <b class="font-bold">Peyman</b>, a front-end <span class="whitespace-nowrap">&lt;developer /&gt;</span> focused on building products that are beautiful from the inside out.</h1>
+	</section>
+</Layout>
