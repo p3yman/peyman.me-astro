@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Default.astro';
-const title = "Peyman Eskandari | Front-end Developer";
+import Link from '../components/Link.astro';
+const title = "Peyman Eskandari | Front-End Developer";
 ---
 
 <Layout title={title}>
 	<section class="pt-36 pb-64">
 		<h1 class="text-3xl font-serif mb-10 leading-relaxed font-light text-secondary">Hi, I’m <b class="font-bold">Peyman</b>, a front-end <span class="whitespace-nowrap">&lt;developer /&gt;</span> focused on building products that are beautiful from the inside out.</h1>
+		<div class="flex space-x-2">
+			<Link to="/contact">View my work</Link>
+		<Link to="/resume">Resume</Link>
+		</div>
 	</section>
 </Layout>

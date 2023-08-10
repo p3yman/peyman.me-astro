@@ -1,0 +1,7 @@
+---
+const { title, url } = Astro.props
+---
+<div class="flex items-start justify-between border-b border-gray-lighter py-6">
+  <a class="text-secondary flex-1 font-serif text-xl font-bold leading-snug hover:text-primary" href={url}><h3>{title}</h3></a>
+  <span class="text-sm text-gray-light font-mono pl-6">May 05, 2023</span>
+</div>

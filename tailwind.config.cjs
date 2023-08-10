@@ -9,6 +9,13 @@ module.exports = {
     colors: {
       primary: "#1755f6",
       secondary: "#444452",
+      gray: {
+        lighter: "#eeeeee",
+        light: "#74747e",
+        DEFAULT: "#444452",
+        dark: '#161718',
+      },
+      white: '#ffffff',
     },
     container: {
       center: true,
