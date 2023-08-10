@@ -1,5 +1,7 @@
 ---
-const {to} = Astro.props;
+const {to, variant = 'primary'} = Astro.props;
+const baseClasses = 'bg-transparent border border-primary rounded-sm text-primary px-4 py-2 font-mono text-sm font-bold uppercase no-underline transition-colors whitespace-nowrap hover:text-white hover:bg-primary';
+
 ---
 <a href={to} class="bg-trasparent border border-primary rounded-sm text-primary px-4 py-2 font-mono text-sm font-bold uppercase no-underline transition-colors whitespace-nowrap hover:text-white hover:bg-primary">
   <slot />
