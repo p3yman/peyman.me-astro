@@ -14,6 +14,7 @@
     "@fontsource/merriweather": "^5.0.8",
     "@fontsource/ubuntu-mono": "^5.0.8",
     "astro": "^2.10.3",
+    "astro-seo": "^0.7.5",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.9",
     "tailwind-variants": "^0.1.13",
