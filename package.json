@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^2.0.1",
     "@astrojs/tailwind": "^4.0.0",
     "@fontsource/merriweather": "^5.0.8",
     "@fontsource/ubuntu-mono": "^5.0.8",
