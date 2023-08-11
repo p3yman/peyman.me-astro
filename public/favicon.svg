@@ -1,8 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-    <g fill="none" fill-rule="evenodd">
-        <g transform="translate(-148 -245)" fill="#1755F6">
-            <path d="m168 245v4h-16v16h-4v-20h20zm0 4v16h-12v-4h8v-12h4zm-8 4v4h-4v-4h4z"/>
-        </g>
-    </g>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_2)">
+<rect width="64" height="64" fill="white"/>
+<g clip-path="url(#clip1_2_2)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 0V12.8H12.8V64H0V0H64ZM64 12.8V64H25.6V51.2H51.2V12.8H64ZM38.4 25.6V38.4H25.6V25.6H38.4Z" fill="#1755F6"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_2_2">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+<clipPath id="clip1_2_2">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
 </svg>
