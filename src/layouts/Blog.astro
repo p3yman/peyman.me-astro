@@ -3,11 +3,11 @@ import { Image } from "astro:assets";
 import dayjs from "dayjs";
 import DefaultLayout from "./Default.astro";
 import { readingTime } from "../utils/readingTime";
-const { title, date, cover, body } = Astro.props;
+const { title, date, cover, description, body } = Astro.props;
 const formattedDate = dayjs(date).format("MMMM DD, YYYY");
 ---
 
-<DefaultLayout>
+<DefaultLayout title={title} description={description} image={cover}>
   <header class="mb-8">
     <h1 class="text-gray-dark text-5xl font-black leading-snug pb-6 font-serif">
       {title}
