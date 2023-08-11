@@ -14,6 +14,7 @@ module.exports = {
         DEFAULT: "#444452",
         dark: "#161718",
       },
+      black: "#000000",
       white: "#ffffff",
     },
     container: {
