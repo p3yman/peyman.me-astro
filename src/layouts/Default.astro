@@ -16,6 +16,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../configs";
     <slot name="head">
       <title>{SITE_TITLE}</title>
       <meta name="description" content={SITE_DESCRIPTION} />
+      <meta property="og:title" content={SITE_TITLE} />
+      <meta property="og:site_name" content={SITE_TITLE} />
+      <meta property="og:url" content={Astro.url.href} />
+      <meta property="og:description" content={SITE_DESCRIPTION} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/seo-image.png" />
     </slot>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
