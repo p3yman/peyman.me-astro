@@ -1,0 +1,37 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import BlogLayout from "../../layouts/Blog.astro";
+import type { Post } from "../utils/types.ts";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post: Post) => {
+    const id = post.slug.split("/").pop();
+    return {
+      params: { id, slug: id },
+      props: post,
+    };
+  });
+}
+type Props = CollectionEntry<"blog">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<style is:global>
+  .prose p {
+    @apply text-lg;
+  }
+  .prose :is(h1, h2, h3, h4, h5, h6) {
+    @apply text-black font-serif font-black leading-relaxed;
+  }
+  .prose h1 {
+    @apply mb-4 mt-14;
+  }
+</style>
+<BlogLayout {...post.data} body={post.body}>
+  <div class="prose">
+    <Content />
+  </div>
+</BlogLayout>

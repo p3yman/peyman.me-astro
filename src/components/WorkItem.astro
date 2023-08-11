@@ -1,0 +1,16 @@
+---
+const { item } = Astro.props;
+---
+
+<div class="w-full">
+  <header class="flex justify-between items-center mb-1">
+    <div class="font-bold">{item.title}</div>
+    <a
+      href={item.source}
+      class="font-mono text-xs text-primary uppercase"
+      target="_blank"
+      rel="noopener noreferrer">Source</a
+    >
+  </header>
+  <div class="text-sm">{item.desc}</div>
+</div>

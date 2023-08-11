@@ -1,21 +1,57 @@
 ---
-import Layout from "../layouts/Default.astro";
+import DefaultLayout from "../layouts/Default.astro";
 import Link from "../components/Link.astro";
-const title = "Peyman Eskandari | Front-End Developer";
+import Section from "../components/Section.astro";
+import ExperienceItem from "../components/ExperienceItem.astro";
+import WorkItem from "../components/WorkItem.astro";
+import { experiences } from "../configs/experiences";
+import { skills } from "../configs/skills";
+import { works } from "../configs/works";
 ---
 
-<Layout title={title}>
-  <section class="pt-36 pb-64">
+<DefaultLayout>
+  <section class="pt-36 pb-64 border-b border-gray-lighter">
     <h1
-      class="text-3xl font-serif mb-10 leading-relaxed font-light text-secondary"
+      class="text-3xl font-serif mb-10 leading-relaxed font-light text-gray-dark"
     >
       Hi, I’m <b class="font-bold">Peyman</b>, a front-end <span
         class="whitespace-nowrap">&lt;developer /&gt;</span
       > focused on building products that are beautiful from the inside out.
     </h1>
     <div class="flex space-x-2">
-      <Link to="/contact">Say hi</Link>
-      <Link to="/resume">Resume</Link>
+      <Link to="mailto:peyman.eskandari@gmail.com">Say hi</Link>
+      <Link to="/resume" variant="outline">Resume</Link>
     </div>
   </section>
-</Layout>
+
+  <Section title="About">
+    <p>
+      I am a Front-End developer and UI designer with industry experience
+      building websites and large-scale web applications. I’m passionate about
+      creating powerful products using React, Vue, Sass, Tailwind, Node.js,
+      Laravel, and Wordpress.
+    </p>
+  </Section>
+
+  <Section title="Skills">
+    <div class="grid grid-cols-4 gap-4">
+      {
+        skills.map((item) => (
+          <span class="text-sm text-gray font-mono">{item}</span>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section title="Experiences">
+    <div class="flex flex-col gap-8">
+      {experiences.map((item) => <ExperienceItem item={item} />)}
+    </div>
+  </Section>
+
+  <Section title="Works">
+    <div class="flex flex-col gap-8">
+      {works.map((item) => <WorkItem item={item} />)}
+    </div>
+  </Section>
+</DefaultLayout>
