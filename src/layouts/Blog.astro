@@ -3,11 +3,22 @@ import { Image } from "astro:assets";
 import dayjs from "dayjs";
 import DefaultLayout from "./Default.astro";
 import { readingTime } from "../utils/readingTime";
+import { SITE_TITLE } from "../configs";
 const { title, date, cover, description, body } = Astro.props;
 const formattedDate = dayjs(date).format("MMMM DD, YYYY");
 ---
 
 <DefaultLayout title={title} description={description} image={cover}>
+  <Fragment slot="head">
+    <title>{title} | {SITE_TITLE}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content={SITE_TITLE} />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content={cover.src} />
+  </Fragment>
   <header class="mb-8">
     <h1 class="text-gray-dark text-5xl font-black leading-snug pb-6 font-serif">
       {title}
