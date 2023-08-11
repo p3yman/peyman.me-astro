@@ -1052,11 +1052,6 @@ astro-eslint-parser@^0.14.0:
     espree "^9.0.0"
     semver "^7.3.8"
 
-astro-seo@^0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.7.5.tgz#0ce29afe4b979da343315de4e4381a2ee44ce242"
-  integrity sha512-bo5PiB4Y30PP9QS6OnYcVOr1fKDE52mvJys/3HgeiM2h+/hS7jESUHZMx6VX7yRid1yMGHsp2OyVTA9DrdPyPg==
-
 astro@^2.10.3:
   version "2.10.4"
   resolved "https://registry.yarnpkg.com/astro/-/astro-2.10.4.tgz#58dace87d29684c7f322b1984a9b00572957bdee"
