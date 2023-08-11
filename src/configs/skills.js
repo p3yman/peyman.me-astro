@@ -1,0 +1,18 @@
+export const skills = [
+  "JavaScript",
+  "TypeScript",
+  "Vue.js",
+  "React.js",
+  "Node.js",
+  "Express",
+  "Git",
+  "Figma",
+  "HTML",
+  "CSS",
+  "Sass",
+  "MongoDB",
+  "PHP",
+  "Laravel",
+  "MySQL",
+  "WordPress",
+];

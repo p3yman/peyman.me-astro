@@ -1,10 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import logo from "../assets/images/logo.svg";
 ---
 
 <header class="pt-12 pb-24 flex justify-between">
   <a aria-current="page" href="/">
-    <img src={logo} alt="Peyman Eskandari" class="w-10" />
+    <Image src={logo} alt="Peyman Eskandari" class="w-10" />
   </a>
   <ul class="flex justify-between space-x-6">
     <li>

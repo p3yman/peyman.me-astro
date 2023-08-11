@@ -1,14 +1,31 @@
 ---
-import Layout from '../layouts/Default.astro';
-import BlogPost from '../components/BlogPost.astro';
+import { getCollection } from "astro:content";
+import DefaultLayout from "../layouts/Default.astro";
+import BlogPostItem from "../components/BlogPostItem.astro";
+import type { Post } from "../utils/types.ts";
 const title = "Blog | Peyman Eskandari | Front-End Developer";
 
-const posts = await Astro.glob('./blog/*.md');
+const posts = (await getCollection("blog"))
+  .sort((a: Post, b: Post) => b.data.date.valueOf() - a.data.date.valueOf())
+  .map((post: Post) => {
+    const id = post.slug.split("/").pop();
+    return {
+      ...post,
+      id,
+      slug: id,
+    };
+  });
 ---
 
-<Layout title={title}>
+<DefaultLayout title={title}>
   <h1 class="font-serif text-6xl font-bold pb-12">Blog.</h1>
-  <ul>
-    {posts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-  </ul>
-</Layout>
+  {
+    posts.map((post: Post) => (
+      <BlogPostItem
+        url={post.slug}
+        title={post.data.title}
+        date={post.data.date}
+      />
+    ))
+  }
+</DefaultLayout>

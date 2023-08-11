@@ -1,8 +1,18 @@
 ---
-const {to, variant = 'primary'} = Astro.props;
-const baseClasses = 'bg-transparent border border-primary rounded-sm text-primary px-4 py-2 font-mono text-sm font-bold uppercase no-underline transition-colors whitespace-nowrap hover:text-white hover:bg-primary';
-
+import { tv } from "tailwind-variants";
+const { to, variant = "primary" } = Astro.props;
+const link = tv({
+  base: "border border-primary rounded-sm text-primary px-4 py-2 font-mono text-sm font-bold uppercase no-underline transition-colors whitespace-nowrap",
+  variants: {
+    variant: {
+      primary: "bg-primary text-white border-primary",
+      outline:
+        "bg-transparent text-primary border-primary hover:bg-primary hover:text-white",
+    },
+  },
+});
 ---
-<a href={to} class="bg-trasparent border border-primary rounded-sm text-primary px-4 py-2 font-mono text-sm font-bold uppercase no-underline transition-colors whitespace-nowrap hover:text-white hover:bg-primary">
+
+<a href={to} class={link({ variant })}>
   <slot />
 </a>
