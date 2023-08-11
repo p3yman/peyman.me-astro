@@ -25,7 +25,7 @@ const ogTitle = title || baseTitle;
         basic: {
           title: ogTitle,
           type: "website",
-          image: image.src,
+          image: image?.src,
         },
       }}
       extend={{
@@ -35,7 +35,7 @@ const ogTitle = title || baseTitle;
         meta: [
           {
             name: "twitter:image",
-            content: image.src,
+            content: image?.src,
           },
           { name: "twitter:title", content: ogTitle },
           { name: "twitter:description", content: description },
