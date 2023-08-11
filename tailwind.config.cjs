@@ -2,7 +2,6 @@
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -13,15 +12,15 @@ module.exports = {
         lighter: "#eeeeee",
         light: "#74747e",
         DEFAULT: "#444452",
-        dark: '#161718',
+        dark: "#161718",
       },
-      white: '#ffffff',
+      white: "#ffffff",
     },
     container: {
       center: true,
       padding: "1rem",
       screens: {
-        sm: "780px",
+        sm: "752px",
       },
     },
     extend: {

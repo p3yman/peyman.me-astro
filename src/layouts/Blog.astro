@@ -1,17 +1,23 @@
 ---
-import Layout from "./Default.astro";
-
-const { frontmatter } = Astro.props;
+import { Image } from "astro:assets";
+import dayjs from "dayjs";
+import DefaultLayout from "./Default.astro";
+import { readingTime } from "../utils/readingTime";
+const { title, date, cover, body } = Astro.props;
+const formattedDate = dayjs(date).format("MMMM DD, YYYY");
 ---
 
-<Layout>
-  <header class="pb-12">
+<DefaultLayout>
+  <header class="mb-8">
     <h1 class="text-gray-dark text-5xl font-black leading-snug pb-6 font-serif">
-      {frontmatter.title}
+      {title}
     </h1>
-    <div class="font-mono text-sm text-gray-light flex space-x-4">
-      <div>May 05, 2023</div><span> |</span><div>5 min read</div>
+    <div class="font-mono text-sm text-gray-light flex space-x-2">
+      <div>{formattedDate}</div><span>|</span><div>
+        {readingTime(body || "")} minutes read
+      </div>
     </div>
   </header>
+  <Image src={cover} alt={title} width={720} height={480} class="mb-8" />
   <slot />
-</Layout>
+</DefaultLayout>

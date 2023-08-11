@@ -1,0 +1,11 @@
+---
+const { item } = Astro.props;
+---
+
+<div class="w-full">
+  <header class="flex justify-between items-center">
+    <div class="font-bold">{item.title}</div>
+    <div class="font-mono text-sm text-gray">{item.time}</div>
+  </header>
+  <div class="text-sm">{item.desc}</div>
+</div>
