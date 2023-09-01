@@ -7,7 +7,4 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: `https://${import.meta.env.VERCEL_URL}`,
   integrations: [tailwind(), robotsTxt(), sitemap()],
-  experimental: {
-    assets: true,
-  },
 });
