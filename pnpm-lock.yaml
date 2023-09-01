@@ -29,6 +29,9 @@ dependencies:
   dayjs:
     specifier: ^1.11.9
     version: 1.11.9
+  sharp:
+    specifier: ^0.32.5
+    version: 0.32.5
   tailwind-variants:
     specifier: ^0.1.13
     version: 0.1.13(tailwindcss@3.0.24)
