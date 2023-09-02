@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import DefaultLayout from "../layouts/Default.astro";
 import BlogPostItem from "../components/BlogPostItem.astro";
 import type { Post } from "../utils/types.ts";
+
+export const prerender = true;
 const title = "Blog | Peyman Eskandari | Front-End Developer";
 
 const posts = (await getCollection("blog"))

@@ -12,8 +12,10 @@
   "dependencies": {
     "@astrojs/sitemap": "^2.0.1",
     "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/vercel": "^4.0.3",
     "@fontsource/merriweather": "^5.0.8",
     "@fontsource/ubuntu-mono": "^5.0.8",
+    "@modular-forms/qwik": "^0.20.2",
     "astro": "^3.0.5",
     "astro-robots-txt": "^0.5.0",
     "clsx": "^2.0.0",
@@ -23,6 +25,7 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
     "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/parser": "^6.3.0",
     "eslint": "^8.46.0",
