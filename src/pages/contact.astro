@@ -1,11 +1,7 @@
 ---
+import ContactForm from "../components/react/ContactForm";
 import DefaultLayout from "../layouts/Default.astro";
 const title = "Contact | Peyman Eskandari | Front-End Developer";
-
-const handleSubmit = async (event) => {
-  event.preventDefault();
-  console.log("Here");
-};
 ---
 
 <DefaultLayout title={title}>
@@ -16,18 +12,5 @@ const handleSubmit = async (event) => {
      I'm listening.
   </h1>
 
-  <form>
-    <div>
-      <input type="text" name="name" placeholder="Name" />
-    </div>
-    <div>
-      <input type="email" name="email" placeholder="Email" />
-    </div>
-    <div>
-      <textarea name="message" placeholder="Message"></textarea>
-    </div>
-    <div>
-      <button type="submit">Send</button>
-    </div>
-  </form>
+  <ContactForm client:load />
 </DefaultLayout>
