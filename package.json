@@ -15,6 +15,7 @@
     "@fontsource/merriweather": "^5.0.8",
     "@fontsource/ubuntu-mono": "^5.0.8",
     "astro": "^3.0.5",
+    "astro-google-analytics": "^1.0.3",
     "astro-robots-txt": "^0.5.0",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.9",
