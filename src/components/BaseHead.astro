@@ -1,0 +1,7 @@
+---
+import { GoogleAnalytics } from "astro-google-analytics";
+
+const GA_ID = import.meta.env.VITE_GA_ID;
+---
+
+<GoogleAnalytics id={GA_ID} />
