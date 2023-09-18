@@ -1,4 +1,5 @@
 ---
+id: kPahaoU2iEM3jPKw
 title: "Oops! I Typed It Again or How a Typo Can Cost You a Job"
 date: 2023-04-03
 description: Don't let a simple typo ruin your job prospects. Explore the importance of avoiding typos in your resume, especially for non-native English speakers, and learn how to present a polished, error-free application that stands out in the competitive job market.

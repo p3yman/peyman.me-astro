@@ -1,4 +1,5 @@
 ---
+id: h9JU5Xg2QGzw0sog
 title: "Nowruz: A Celebration of Spring and New Beginnings"
 date: 2023-03-20
 description: Nowruz is a significant cultural holiday celebrated in Iran and a few other countries, particularly in the Middle East, Central Asia, and South Asia. Discover the history and traditions of Nowruz, from the Haft-Seen table to fire jumping, and learn how this holiday is celebrated around the world.

@@ -1,4 +1,5 @@
 ---
+id: SiU6chRzwLlw2k3W
 title: Create multiple folders at once on the terminal
 date: 2020-08-08
 description: Sometimes it's hard to make multiple folders on a target folder. This is a simple trick to make it as fast as it can be.

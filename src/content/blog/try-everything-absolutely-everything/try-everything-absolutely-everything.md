@@ -1,4 +1,5 @@
 ---
+id: Lx07Ba42nwxqWT8n
 title: Try everything, absolutely Everything!
 date: 2023-09-11
 description: Join me as I spill the tea on my weekend coding adventures, hopping from Gatsby to Astro, and dabbling in Qwik and Bun. Find out why I think you don't always have to follow the crowd when the 'next big thing' comes around. Sometimes, the old tricks work just as well.

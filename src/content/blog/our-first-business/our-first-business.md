@@ -1,4 +1,5 @@
 ---
+id: Fn42yF97P9WmhxBm
 title: "Story time: Our first business"
 date: 2023-03-29
 description: Let's dive into the story of our first business adventure together with my dad, where we translated electronic device manuals from English to Persian. We discuss the challenges we faced, the strategies we employed, and the positive experiences that resulted from our efforts.

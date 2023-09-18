@@ -1,4 +1,5 @@
 ---
+id: SpPABxPox6VB8fx1
 title: "Two Devs, One Goal: Practice for Interviews as Friends - Part 1: HR Interviews"
 date: 2023-03-25
 description: "Unlock the power of teamwork in this first installment of a four-part series, 'Two Devs, One Goal: Practice for Interviews as Friends.' Explore essential tips and strategies for acing HR interviews and embark on the journey to job interview success together."

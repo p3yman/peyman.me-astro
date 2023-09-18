@@ -1,4 +1,5 @@
 ---
+id: DDsrvYFLxbsCBqgQ
 title: How to be a good junior developer?
 date: 2020-08-02
 description: A brief on how to be a good junior developer.

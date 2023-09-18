@@ -1,4 +1,5 @@
 ---
+id: vmr8DxqH4HUPnriW
 title: "The Clear Winner: How Side-Products Crush Side-Projects in the Race for Your Dream Job"
 date: 2023-05-05
 description: Introduce the concept of side-products and how they can better showcase a developer's skills and professionalism comparing to side-projects.

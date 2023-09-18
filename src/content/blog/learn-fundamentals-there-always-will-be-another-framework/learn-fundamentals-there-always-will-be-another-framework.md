@@ -1,4 +1,5 @@
 ---
+id: QMtUy0f1pz2vzVKY
 title: Learn fundamentals, there always will be another framework!
 date: 2020-08-12
 description: An alternative to all the crash courses.

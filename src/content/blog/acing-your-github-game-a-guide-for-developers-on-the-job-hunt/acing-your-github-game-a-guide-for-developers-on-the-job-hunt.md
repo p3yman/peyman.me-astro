@@ -1,4 +1,5 @@
 ---
+id: AthsJckOhgBj9HQr
 title: "Acing Your GitHub Game: A Guide for Developers on the Job Hunt"
 draft: true
 date: 2023-03-02
