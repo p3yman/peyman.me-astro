@@ -1,4 +1,5 @@
 ---
+id: Gg1g5C1CY6xXINB3
 title: We learn if they learn
 date: 2023-09-17
 description: URLs could be long. Very long. Learn how to create a simple URL Shortener for your website using Vercel redirects feature.

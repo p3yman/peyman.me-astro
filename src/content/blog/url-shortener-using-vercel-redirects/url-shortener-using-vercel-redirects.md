@@ -1,4 +1,5 @@
 ---
+id: UoGdkgiZtkt9No4A
 title: Create a simple URL Shortener for your website using Vercel
 date: 2020-10-17
 description: URLs could be long. Very long. Learn how to create a simple URL Shortener for your website using Vercel redirects feature.

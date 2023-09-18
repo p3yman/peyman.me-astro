@@ -1,5 +1,5 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import BlogLayout from "../../layouts/Blog.astro";
 import type { Post } from "../utils/types.ts";
 
@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
+const postID = post.data.id;
 const { Content } = await post.render();
 ---
 
@@ -33,5 +34,24 @@ const { Content } = await post.render();
 <BlogLayout {...post.data} body={post.body}>
   <div class="prose">
     <Content />
+  </div>
+
+  <div class="mt-12 border-t border-t-gray-lighter pt-12">
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="p3yman/peyman.me"
+      data-repo-id="R_kgDOKFTTaQ"
+      data-category="Blog"
+      data-category-id="DIC_kwDOKFTTac4CZZlm"
+      data-mapping="specific-term"
+      data-term={postID}
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="light"
+      data-lang="en"
+      crossorigin="anonymous"
+      async></script>
   </div>
 </BlogLayout>
