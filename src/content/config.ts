@@ -8,9 +8,17 @@ const blogCollection = defineCollection({
       title: z.string(),
       description: z.string(),
       date: z.date(),
-      cover: image().refine((img) => img.width >= 720, {
-        message: "Cover image must be at least 720 pixels wide!",
-      }),
+      cover: image()
+        .optional()
+        .refine(
+          (img) => {
+            if (!img) return true;
+            return img.width >= 720;
+          },
+          {
+            message: "Cover image must be at least 720 pixels wide!",
+          }
+        ),
       category: z.array(z.enum(categories as [string, ...string[]])),
     }),
 });

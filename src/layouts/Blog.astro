@@ -8,7 +8,7 @@ const { title, date, cover, description, body, category } = Astro.props;
 const formattedDate = dayjs(date).format("MMMM DD, YYYY");
 ---
 
-<DefaultLayout title={title} description={description} image={cover}>
+<DefaultLayout title={title} description={description}>
   <Fragment slot="head">
     <title>{title} | {SITE_TITLE}</title>
     <meta name="description" content={description} />
@@ -17,7 +17,7 @@ const formattedDate = dayjs(date).format("MMMM DD, YYYY");
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content={cover.src} />
+    <meta property="og:image" content={cover?.src ?? "/seo-image.png"} />
   </Fragment>
   <header class="mb-8">
     <div class="mb-8">
@@ -43,6 +43,12 @@ const formattedDate = dayjs(date).format("MMMM DD, YYYY");
       </div>
     </div>
   </header>
-  <Image src={cover} alt={title} width={720} height={480} class="mb-8" />
+  {
+    cover ? (
+      <Image src={cover} alt={title} width={720} height={480} class="mb-8" />
+    ) : (
+      <hr class="border-t border-t-gray-lighter mb-8" />
+    )
+  }
   <slot />
 </DefaultLayout>
