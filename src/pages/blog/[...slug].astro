@@ -1,11 +1,10 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogLayout from "../../layouts/Blog.astro";
-import type { Post } from "../utils/types.ts";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  return posts.map((post: Post) => {
+  return posts.map((post) => {
     const id = post.slug.split("/").pop();
     return {
       params: { id, slug: id },
