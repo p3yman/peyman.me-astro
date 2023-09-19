@@ -1,4 +1,3 @@
-import clear from "clear";
 import welcome from "cli-welcome";
 import inquirer from "inquirer";
 import chalk from "chalk";
@@ -6,8 +5,6 @@ import { customAlphabet } from "nanoid";
 import slugify from "slugify";
 import fs from "fs";
 import { categories } from "../src/configs/categories.js";
-
-clear();
 
 const nanoid = customAlphabet(
   "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
