@@ -4,7 +4,10 @@ title: Learn fundamentals, there always will be another framework!
 date: 2020-08-12
 description: An alternative to all the crash courses.
 tags: developer, career, work, webdev
-cover: ./cover.jpg
+cover:
+  img: ./cover.jpg
+  credit: Element5 Digital
+  url: https://unsplash.com/photos/OyCl7Y4y0Bk
 category: ["Dev", "Career"]
 ---
 

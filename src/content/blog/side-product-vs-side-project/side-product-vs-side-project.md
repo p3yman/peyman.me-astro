@@ -4,7 +4,8 @@ title: "The Clear Winner: How Side-Products Crush Side-Projects in the Race for 
 date: 2023-05-05
 description: Introduce the concept of side-products and how they can better showcase a developer's skills and professionalism comparing to side-projects.
 tags: first business, translating manuals, electronic devices, MP3 technology, father and child business, user experience, Persian translation, entrepreneurship
-cover: ./cover.jpg
+cover:
+  img: ./cover.jpg
 category: ["Product", "Design", "Project", "Dev"]
 ---
 

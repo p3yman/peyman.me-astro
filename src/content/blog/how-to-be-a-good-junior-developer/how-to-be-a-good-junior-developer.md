@@ -4,7 +4,10 @@ title: How to be a good junior developer?
 date: 2020-08-02
 description: A brief on how to be a good junior developer.
 tags: developer, career, work, team
-cover: ./cover.jpeg
+cover:
+  img: ./cover.jpeg
+  credit: Desola Lanre-Ologun
+  url: https://unsplash.com/photos/IgUR1iX0mqM
 category: ["Career"]
 ---
 
