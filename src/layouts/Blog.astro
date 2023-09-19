@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 import DefaultLayout from "./Default.astro";
 import { readingTime } from "../utils/readingTime";
 import { SITE_TITLE } from "../configs";
-const { title, date, cover, description, body } = Astro.props;
+const { title, date, cover, description, body, category } = Astro.props;
 const formattedDate = dayjs(date).format("MMMM DD, YYYY");
 ---
 
@@ -20,10 +20,24 @@ const formattedDate = dayjs(date).format("MMMM DD, YYYY");
     <meta property="og:image" content={cover.src} />
   </Fragment>
   <header class="mb-8">
+    <div class="mb-8">
+      <a href="/blog" class="text-gray-light hover:text-gray-dark">
+        ← Back to blog
+      </a>
+    </div>
     <h1 class="text-gray-dark text-5xl font-black leading-snug pb-6 font-serif">
       {title}
     </h1>
-    <div class="font-mono text-sm text-gray-light flex space-x-2">
+    <div class="font-mono text-sm text-gray-light flex space-x-2 items-center">
+      <div class="flex gap-1 mr-1">
+        {
+          category.map((cat: string) => (
+            <span class="px-2 py-1 rounded bg-gray-lighter text-gray-dark">
+              {cat}
+            </span>
+          ))
+        }
+      </div>
       <div>{formattedDate}</div><span>|</span><div>
         {readingTime(body || "")} minutes read
       </div>

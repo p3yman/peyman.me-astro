@@ -5,6 +5,7 @@ date: 2023-03-20
 description: Nowruz is a significant cultural holiday celebrated in Iran and a few other countries, particularly in the Middle East, Central Asia, and South Asia. Discover the history and traditions of Nowruz, from the Haft-Seen table to fire jumping, and learn how this holiday is celebrated around the world.
 tags: Nowruz, Persian New Year, Haft-Seen, fire jumping, spring cleaning, traditions, cultural holiday, Zoroastrianism, Iran, family, friends, renewal, rejuvenation, celebration
 cover: ./nowruz-cover.jpg
+category: ["Life"]
 ---
 
 This is the 4th year that I'm far from home, but as an Iranian, celebrating Nowruz holds a special place in my heart. Nowruz, which is also known as the Persian New Year, is a holiday that is steeped in tradition and culture, and it serves as a reminder of the beauty and richness of my Iranian heritage. The holiday, which is celebrated on the first day of spring, is a time of renewal, as well as a time for families and friends to come together to celebrate. In this post, I would like to share some of the history and traditions associated with Nowruz, as well as my personal experiences of celebrating the holiday.
