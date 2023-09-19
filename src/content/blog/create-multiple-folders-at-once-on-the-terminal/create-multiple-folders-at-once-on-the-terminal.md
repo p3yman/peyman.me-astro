@@ -4,7 +4,10 @@ title: Create multiple folders at once on the terminal
 date: 2020-08-08
 description: Sometimes it's hard to make multiple folders on a target folder. This is a simple trick to make it as fast as it can be.
 tags: tips, tricks, terminal, cli
-cover: ./cover.jpeg
+cover:
+  img: ./cover.jpeg
+  credit: Viktor Talashuk
+  url: https://unsplash.com/photos/05HLFQu8bFw
 category: ["Dev", "Tips"]
 ---
 

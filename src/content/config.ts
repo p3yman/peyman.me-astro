@@ -8,9 +8,15 @@ const blogCollection = defineCollection({
       title: z.string(),
       description: z.string(),
       date: z.date(),
-      cover: image().refine((img) => img.width >= 720, {
-        message: "Cover image must be at least 720 pixels wide!",
-      }),
+      cover: z
+        .object({
+          img: image().refine((img) => img.width >= 720, {
+            message: "Cover image must be at least 720 pixels wide!",
+          }),
+          credit: z.string().optional(),
+          url: z.string().url().optional(),
+        })
+        .optional(),
       category: z.array(z.enum(categories as [string, ...string[]])),
     }),
 });

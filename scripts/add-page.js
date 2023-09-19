@@ -59,7 +59,6 @@ title: ${answers.title}
 description: A short description
 date: ${date}
 tags: sample-tag
-cover: ./cover.jpg
 category: [${answers.categories.map((c) => `"${c}"`).join(", ")}]
 ---
 

@@ -5,7 +5,10 @@ draft: true
 date: 2023-03-02
 description: Discover how to optimize your GitHub profile for job hunting success with this comprehensive guide. Learn the best practices for showcasing your work, contributing to open-source projects, and highlighting your skills to impress potential employers.
 tags: GitHub, Developers, Job Hunt, Open-source, Profile Optimization, Software Development, Programming, Coding, Repositories, Career Advice, Technical Skills, Soft Skills, README, Networking, Portfolio
-cover: ./cover.jpg
+cover:
+  img: ./cover.jpg
+  credit: Praveen Thirumurugan
+  url: https://unsplash.com/photos/KPAQpJYzH0Y
 category: ["Career", "Dev"]
 ---
 
