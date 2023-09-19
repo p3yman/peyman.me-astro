@@ -18,4 +18,13 @@ export const Categories = [
   "Trips",
   "Tips",
   "Business",
+  "Music",
+  "Football",
+  "Video Games",
+  "Movie",
+  "TV Show",
+  "Podcast",
+  "Food",
+  "Health",
+  "Fitness",
 ] as const;
