@@ -5,6 +5,7 @@ date: 2023-04-03
 description: Don't let a simple typo ruin your job prospects. Explore the importance of avoiding typos in your resume, especially for non-native English speakers, and learn how to present a polished, error-free application that stands out in the competitive job market.
 tags: resume, job hunting, typos, non-native English speakers, proofreading, capitalization, English skills, career
 cover: ./cover.jpg
+category: ["Dev"]
 ---
 
 As a non-native English speaker, you might think that you've got a good grasp on the English language. But even if you've been studying and practicing for years, it's easy to overlok those typos. In fact, some of us don't even notice them or care about them at all. But guess what? The people reading your resume definitely do. In the competitive world of job hunting, a simple typo can be enough to get your application tosed aside.

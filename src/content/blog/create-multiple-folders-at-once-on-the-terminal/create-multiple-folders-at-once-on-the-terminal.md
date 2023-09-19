@@ -5,6 +5,7 @@ date: 2020-08-08
 description: Sometimes it's hard to make multiple folders on a target folder. This is a simple trick to make it as fast as it can be.
 tags: tips, tricks, terminal, cli
 cover: ./cover.jpeg
+category: ["Dev", "Tips"]
 ---
 
 I think you are familiar with the problem. You start a new project and to make the structure you should do something like this:

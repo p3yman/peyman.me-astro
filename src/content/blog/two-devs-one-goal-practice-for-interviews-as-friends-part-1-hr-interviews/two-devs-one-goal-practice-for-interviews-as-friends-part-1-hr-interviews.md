@@ -5,6 +5,7 @@ date: 2023-03-25
 description: "Unlock the power of teamwork in this first installment of a four-part series, 'Two Devs, One Goal: Practice for Interviews as Friends.' Explore essential tips and strategies for acing HR interviews and embark on the journey to job interview success together."
 tags: developer friends, HR interviews, job interview preparation, teamwork, collaboration, interview success, two devs one goal, interview practice, career development, communication skills
 cover: ./cover.jpg
+category: ["Dev", "Career"]
 ---
 
 Hey there 👋!

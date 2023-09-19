@@ -5,6 +5,7 @@ date: 2023-03-29
 description: Let's dive into the story of our first business adventure together with my dad, where we translated electronic device manuals from English to Persian. We discuss the challenges we faced, the strategies we employed, and the positive experiences that resulted from our efforts.
 tags: first business, translating manuals, electronic devices, MP3 technology, father and child business, user experience, Persian translation, entrepreneurship
 cover: ./cover.jpeg
+category: ["Business", "Life"]
 ---
 
 22 years ago, my father and I embarked on our very first business venture. The other day, we were talking about the past, and our conversation led to the small businesses we started years ago.

@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { Categories } from "../configs";
 
 const blogCollection = defineCollection({
   schema: ({ image }) =>
@@ -10,6 +11,7 @@ const blogCollection = defineCollection({
       cover: image().refine((img) => img.width >= 720, {
         message: "Cover image must be at least 720 pixels wide!",
       }),
+      category: z.array(z.enum(Categories)),
     }),
 });
 

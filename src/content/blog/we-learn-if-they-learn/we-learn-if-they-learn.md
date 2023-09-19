@@ -5,6 +5,7 @@ date: 2023-09-17
 description: URLs could be long. Very long. Learn how to create a simple URL Shortener for your website using Vercel redirects feature.
 tags: vercel, cli, redirects, deploy
 cover: ./cover.jpg
+category: ["Learning", "Note"]
 ---
 
 I can't pass any day without watching some YouTube videos related to tech or being a developer. That's how I try to be a better developer: learn, practice, repeat.
