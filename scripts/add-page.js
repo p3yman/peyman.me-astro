@@ -1,12 +1,10 @@
-import clear from "clear";
 import welcome from "cli-welcome";
 import inquirer from "inquirer";
 import chalk from "chalk";
 import { customAlphabet } from "nanoid";
 import slugify from "slugify";
 import fs from "fs";
-
-clear();
+import { categories } from "../src/configs/categories.js";
 
 const nanoid = customAlphabet(
   "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -38,6 +36,19 @@ inquirer
         return true;
       },
     },
+    {
+      type: "checkbox",
+      name: "categories",
+      choices: categories,
+      message: question("Select categories:"),
+      validate: (categories) => {
+        if (!categories.length) {
+          return "Please select at least one category";
+        }
+
+        return true;
+      },
+    },
   ])
   .then((answers) => {
     const id = nanoid();
@@ -49,6 +60,7 @@ description: A short description
 date: ${date}
 tags: sample-tag
 cover: ./cover.jpg
+category: [${answers.categories.map((c) => `"${c}"`).join(", ")}]
 ---
 
 # Enjoy writing...

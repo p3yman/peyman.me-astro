@@ -52,9 +52,6 @@ devDependencies:
   chalk:
     specifier: ^5.3.0
     version: 5.3.0
-  clear:
-    specifier: ^0.1.0
-    version: 0.1.0
   cli-welcome:
     specifier: ^2.2.2
     version: 2.2.2
@@ -1637,10 +1634,6 @@ packages:
 
   /clear-any-console@1.16.2:
     resolution: {integrity: sha512-OL/7wZpNy9x0GBSzz3poWja84Nr7iaH8aYNsJ5Uet2BVLj6Lm1zvWpZN/yH46Vv3ae7YfHmLLMmfHj911fshJg==}
-    dev: true
-
-  /clear@0.1.0:
-    resolution: {integrity: sha512-qMjRnoL+JDPJHeLePZJuao6+8orzHMGP04A8CdwCNsKhRbOnKRjefxONR7bwILT3MHecxKBjHkKL/tkZ8r4Uzw==}
     dev: true
 
   /cli-boxes@3.0.0:
