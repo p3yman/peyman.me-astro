@@ -6,6 +6,8 @@ description: Introduce the concept of side-products and how they can better show
 tags: first business, translating manuals, electronic devices, MP3 technology, father and child business, user experience, Persian translation, entrepreneurship
 cover:
   img: ./cover.jpg
+  by: Fotis Fotopoulos
+  url: https://unsplash.com/photos/SyvsTmuuZyM
 category: ["Product", "Design", "Project", "Dev"]
 ---
 
