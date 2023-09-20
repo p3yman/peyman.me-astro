@@ -4,7 +4,9 @@ const { title, url, date } = Astro.props;
 const formattedDate = dayjs(date).format("MMMM DD, YYYY");
 ---
 
-<div class="flex items-start justify-between border-b border-gray-lighter py-6">
+<div
+  class="flex items-start justify-between border-b border-gray-lighter py-6 last:border-b-0"
+>
   <a
     class="text-secondary flex-1 font-serif text-xl font-bold leading-snug hover:text-primary"
     href={url}
