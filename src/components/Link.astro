@@ -1,6 +1,7 @@
 ---
 import { tv } from "tailwind-variants";
-const { to, variant = "primary" } = Astro.props;
+const { to, variant = "primary", size = "md", target = "self" } = Astro.props;
+console.log(Astro.props);
 const link = tv({
   base: "border border-primary rounded-sm text-primary px-4 py-2 font-mono text-sm font-bold uppercase no-underline transition-colors whitespace-nowrap",
   variants: {
@@ -9,10 +10,15 @@ const link = tv({
       outline:
         "bg-transparent text-primary border-primary hover:bg-primary hover:text-white",
     },
+    size: {
+      sm: "text-xs px-2 py-1",
+      md: "text-sm px-4 py-2",
+      lg: "text-lg px-6 py-3",
+    },
   },
 });
 ---
 
-<a href={to} class={link({ variant })}>
+<a href={to} class={link({ variant, size })} target={target}>
   <slot />
 </a>
