@@ -7,22 +7,24 @@ import logo from "../assets/images/logo.svg";
   <a aria-current="page" href="/">
     <Image src={logo} alt="Peyman Eskandari" class="w-10" />
   </a>
-  <ul class="flex justify-between space-x-6">
-    <li>
-      <a
-        class="font-mono uppercase text-secondary hover:text-primary"
-        href="/blog/"
-      >
-        <span data-hover="Blog">Blog</span>
-      </a>
-    </li>
-    <li>
-      <a
-        class="font-mono uppercase text-secondary hover:text-primary"
-        href="mailto:peyman.eskandari@gmail.com"
-      >
-        <span data-hover="Contact">Contact</span>
-      </a>
-    </li>
-  </ul>
+  <nav class="flex justify-between space-x-6">
+    <a
+      class="font-mono uppercase text-secondary hover:text-primary"
+      href="/blog"
+    >
+      <span data-hover="Blog">Blog</span>
+    </a>
+    <a
+      class="font-mono uppercase text-secondary hover:text-primary"
+      href="/mentoring"
+    >
+      <span data-hover="Mentoring">Mentoring</span>
+    </a>
+    <a
+      class="font-mono uppercase text-secondary hover:text-primary"
+      href="mailto:peyman.eskandari@gmail.com"
+    >
+      <span data-hover="Contact">Contact</span>
+    </a>
+  </nav>
 </header>

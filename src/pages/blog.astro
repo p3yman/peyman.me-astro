@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import DefaultLayout from "../layouts/Default.astro";
 import BlogPostItem from "../components/BlogPostItem.astro";
-const title = "Blog | Peyman Eskandari | Front-End Developer";
+const title = "Blog";
 
 const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())

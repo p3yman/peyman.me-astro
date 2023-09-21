@@ -5,10 +5,6 @@
       "destination": "/blog/url-shortener-using-vercel-redirects"
     },
     { "source": "/gh", "destination": "https://github.com/p3yman" },
-    { "source": "/li", "destination": "https://www.linkedin.com/in/p3yman/" },
-    {
-      "source": "/mentoring",
-      "destination": "https://calendly.com/p3yman/mentoring"
-    }
+    { "source": "/li", "destination": "https://www.linkedin.com/in/p3yman/" }
   ]
 }
