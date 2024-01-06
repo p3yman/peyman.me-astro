@@ -66,7 +66,7 @@ category: [${answers.categories.map((c) => `"${c}"`).join(", ")}]
 `;
 
     const slug = slugify(answers.title, {
-      remove: /[*+~.()'"!:@]/g,
+      remove: /[*+~.()'"!:@?]/g,
     }).toLocaleLowerCase();
     const path = `./src/content/blog/${slug}`;
     fs.mkdirSync(path, { recursive: true });
