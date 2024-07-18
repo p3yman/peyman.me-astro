@@ -33,6 +33,16 @@ const { title = null } = Astro.props;
     <BaseHead />
   </head>
   <body class="container">
+    <script>
+      (function () {
+        var fullres = document.createElement("script");
+        var date = new Date().getTime();
+        fullres.async = true;
+        fullres.src =
+          "https://t.fullres.net/peyman.js?" + (date - (date % 43200000));
+        document.head.appendChild(fullres);
+      })();
+    </script>
     <Header />
     <article>
       <slot />
