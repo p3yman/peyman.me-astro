@@ -6,6 +6,5 @@
     },
     { "source": "/gh", "destination": "https://github.com/p3yman" },
     { "source": "/li", "destination": "https://www.linkedin.com/in/p3yman/" },
-    { "source": "/forprint", "destination": "https://drive.google.com/drive/folders/1Tdx0H8C1WeqHzGx4cIkHM4pOkuOH32Tb" }
   ]
 }
