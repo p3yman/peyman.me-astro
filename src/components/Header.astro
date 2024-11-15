@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/images/logo.svg";
+const isDev = import.meta.env.DEV;
 ---
 
 <header class="pt-12 pb-24 flex justify-between">
@@ -8,6 +9,16 @@ import logo from "../assets/images/logo.svg";
     <Image src={logo} alt="Peyman Eskandari" class="w-10" />
   </a>
   <nav class="flex justify-between space-x-6">
+    {
+      isDev && (
+        <a
+          class="font-mono uppercase text-secondary hover:text-primary"
+          href="/admin"
+        >
+          <span data-hover="Admin">Admin</span>
+        </a>
+      )
+    }
     <a
       class="font-mono uppercase text-secondary hover:text-primary"
       href="/blog"

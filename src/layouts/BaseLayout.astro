@@ -1,0 +1,46 @@
+---
+import "@fontsource/ubuntu-mono/400.css";
+import "@fontsource/ubuntu-mono/700.css";
+import "@fontsource/merriweather/300.css";
+import "@fontsource/merriweather/400.css";
+import "@fontsource/merriweather/700.css";
+import "@fontsource/merriweather/900.css";
+
+import { SITE_TITLE, SITE_DESCRIPTION } from "../configs";
+import BaseHead from "../components/BaseHead.astro";
+
+const { title = null } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <slot name="head">
+      <title>{title ? `${title} | ${SITE_TITLE}` : SITE_TITLE}</title>
+      <meta name="description" content={SITE_DESCRIPTION} />
+      <meta property="og:title" content={SITE_TITLE} />
+      <meta property="og:site_name" content={SITE_TITLE} />
+      <meta property="og:url" content={Astro.url.href} />
+      <meta property="og:description" content={SITE_DESCRIPTION} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/seo-image.png" />
+    </slot>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <BaseHead />
+  </head>
+  <body>
+    <script>
+      (function () {
+        var fullres = document.createElement("script");
+        var date = new Date().getTime();
+        fullres.async = true;
+        fullres.src =
+          "https://t.fullres.net/peyman.js?" + (date - (date % 43200000));
+        document.head.appendChild(fullres);
+      })();
+    </script>
+    <slot />
+  </body>
+</html>
