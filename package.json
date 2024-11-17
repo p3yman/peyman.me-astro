@@ -4,7 +4,7 @@
   "description": "**Made with ❤️ using [Astro](https://astro.build)**",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build --workspace=website"
   },
   "keywords": [],
   "author": "",
