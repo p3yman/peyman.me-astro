@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { DefaultLayout } from "./layouts/Default";
 import { Posts } from "./pages/Posts";
+import { EditPost } from "./pages/EditPost";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/posts",
         element: <Posts />,
+      },
+      {
+        path: "/posts/:id",
+        element: <EditPost />,
       },
       {
         path: "/settings",
