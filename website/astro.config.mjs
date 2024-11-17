@@ -7,4 +7,5 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: "https://peyman.me",
   integrations: [tailwind(), robotsTxt(), sitemap()],
+  outDir: "../dist",
 });
