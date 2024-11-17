@@ -4,6 +4,8 @@
   "description": "**Made with ❤️ using [Astro](https://astro.build)**",
   "main": ".eslintrc.js",
   "scripts": {
+    "cms": "npm run dev --workspace=cms",
+    "dev": "npm run dev --workspace=website",
     "build": "npm run build --workspace=website"
   },
   "keywords": [],
