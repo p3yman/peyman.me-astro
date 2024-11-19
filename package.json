@@ -5,8 +5,10 @@
   "main": ".eslintrc.js",
   "scripts": {
     "cms": "npm run dev --workspace=cms",
-    "dev": "npm run dev --workspace=website",
-    "build": "npm run build --workspace=website"
+    "website": "npm run dev --workspace=website",
+    "server": "npm run dev --workspace=server",
+    "build": "npm run build --workspace=website",
+    "add-page": "npm run add-page --workspace=website"
   },
   "keywords": [],
   "author": "",
