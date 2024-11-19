@@ -17,5 +17,8 @@
     "website",
     "server",
     "cms"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
 }
