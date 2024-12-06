@@ -7,7 +7,7 @@ const title = "Blog";
 const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .map((post) => {
-    const id = post.slug.split("/").pop();
+    const id = post.id.split("/").pop();
     return {
       ...post,
       id,
