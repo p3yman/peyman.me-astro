@@ -1,7 +1,9 @@
 import { defineCollection, z } from "astro:content";
 import { categories } from "../configs/categories";
+import { glob } from "astro/loaders";
 
-const blogCollection = defineCollection({
+const blog = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: ({ image }) =>
     z.object({
       id: z.string(),
@@ -10,9 +12,7 @@ const blogCollection = defineCollection({
       date: z.date(),
       cover: z
         .object({
-          img: image().refine((img) => img.width >= 720, {
-            message: "Cover image must be at least 720 pixels wide!",
-          }),
+          img: image().optional(),
           credit: z.string().optional(),
           url: z.string().url().optional(),
         })
@@ -21,6 +21,4 @@ const blogCollection = defineCollection({
     }),
 });
 
-export const collections = {
-  blog: blogCollection,
-};
+export const collections = { blog };

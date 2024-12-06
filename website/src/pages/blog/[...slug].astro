@@ -1,11 +1,11 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import BlogLayout from "../../layouts/Blog.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => {
-    const id = post.slug.split("/").pop();
+    const id = post.id.split("/").pop();
     return {
       params: { id, slug: id },
       props: post,
@@ -16,7 +16,7 @@ type Props = CollectionEntry<"blog">;
 
 const post = Astro.props;
 const postID = post.data.id;
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <style is:global>
